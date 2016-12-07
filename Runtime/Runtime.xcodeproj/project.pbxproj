@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		052D24C81DED228F000D6A2C /* ExchangeMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052D24C71DED228F000D6A2C /* ExchangeMethodController.m */; };
 		052D24CB1DED23B0000D6A2C /* ExchangeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 052D24CA1DED23B0000D6A2C /* ExchangeView.m */; };
+		422EDD3B1DF7FDF8007772B3 /* TransmitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422EDD3A1DF7FDF8007772B3 /* TransmitController.m */; };
+		422EDD3E1DF7FE1E007772B3 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 422EDD3D1DF7FE1E007772B3 /* TestView.m */; };
 		42C9AB8C1DEC7677005D65D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C9AB8B1DEC7677005D65D8 /* main.m */; };
 		42C9AB8F1DEC7677005D65D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C9AB8E1DEC7677005D65D8 /* AppDelegate.m */; };
 		42C9AB921DEC7677005D65D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C9AB911DEC7677005D65D8 /* ViewController.m */; };
@@ -42,6 +44,10 @@
 		052D24C71DED228F000D6A2C /* ExchangeMethodController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeMethodController.m; sourceTree = "<group>"; };
 		052D24C91DED23B0000D6A2C /* ExchangeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeView.h; sourceTree = "<group>"; };
 		052D24CA1DED23B0000D6A2C /* ExchangeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeView.m; sourceTree = "<group>"; };
+		422EDD391DF7FDF8007772B3 /* TransmitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransmitController.h; sourceTree = "<group>"; };
+		422EDD3A1DF7FDF8007772B3 /* TransmitController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransmitController.m; sourceTree = "<group>"; };
+		422EDD3C1DF7FE1E007772B3 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		422EDD3D1DF7FE1E007772B3 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		42C9AB871DEC7677005D65D8 /* Runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42C9AB8B1DEC7677005D65D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42C9AB8D1DEC7677005D65D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +105,17 @@
 			path = ExchangeMethod;
 			sourceTree = "<group>";
 		};
+		422EDD381DF7FDD7007772B3 /* TransmitMethod */ = {
+			isa = PBXGroup;
+			children = (
+				422EDD3C1DF7FE1E007772B3 /* TestView.h */,
+				422EDD3D1DF7FE1E007772B3 /* TestView.m */,
+				422EDD391DF7FDF8007772B3 /* TransmitController.h */,
+				422EDD3A1DF7FDF8007772B3 /* TransmitController.m */,
+			);
+			path = TransmitMethod;
+			sourceTree = "<group>";
+		};
 		42C9AB7E1DEC7677005D65D8 = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +139,7 @@
 		42C9AB891DEC7677005D65D8 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				422EDD381DF7FDD7007772B3 /* TransmitMethod */,
 				052D24C51DED2285000D6A2C /* ExchangeMethod */,
 				42C9ABBD1DEC7690005D65D8 /* AddMethod */,
 				42C9AB8D1DEC7677005D65D8 /* AppDelegate.h */,
@@ -306,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422EDD3E1DF7FE1E007772B3 /* TestView.m in Sources */,
 				052D24C81DED228F000D6A2C /* ExchangeMethodController.m in Sources */,
+				422EDD3B1DF7FDF8007772B3 /* TransmitController.m in Sources */,
 				052D24CB1DED23B0000D6A2C /* ExchangeView.m in Sources */,
 				42C9ABC71DEC7993005D65D8 /* AddMethodController.m in Sources */,
 				42C9AB921DEC7677005D65D8 /* ViewController.m in Sources */,

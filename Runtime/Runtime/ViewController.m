@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ExchangeMethodController.h"
 #import "AddMethodController.h"
+#import "TransmitController.h"
 
 static NSString *const cellID = @"runtimeCell";
 
@@ -44,6 +45,14 @@ static NSString *const cellID = @"runtimeCell";
             AddMethodController *addMethodVC = [[AddMethodController alloc]init];
             [self.navigationController pushViewController:addMethodVC animated:YES];
         }
+            break;
+            
+        case 2:
+        {
+            TransmitController *transmitVC = [[TransmitController alloc]init];
+            [self.navigationController pushViewController:transmitVC animated:YES];
+        }
+            break;
             
         default:
             break;
@@ -78,8 +87,9 @@ static NSString *const cellID = @"runtimeCell";
 
 - (NSArray *)dataSource {
     if (!_dataSource) {
-        _dataSource = [[NSArray alloc]initWithObjects:@"ExchangeMethod",
-                                                           @"AddMethod",@"", nil];
+        _dataSource = [[NSArray alloc]initWithObjects:@"交换方法",
+                                                      @"添加方法",
+                                                      @"消息转发", nil];
     }
     return _dataSource;
 }
